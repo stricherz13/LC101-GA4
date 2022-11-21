@@ -11,7 +11,7 @@ const options = {
 }
 
 let html = fs.readFileSync(path.resolve(__dirname, "../index.html"), 'utf8');
-let css = fs.readFileSync(path.resolve(__dirname, "../styles.css"), 'utf8')
+let css = fs.readFileSync(path.resolve(__dirname, "../style.css"), 'utf8')
 
 describe ("Grading Tests: ", function () {
 
@@ -56,7 +56,7 @@ describe ("Grading Tests: ", function () {
 
    it("HTML includes external CSS script", function() {
       let linkElement = container.getElementsByTagName("Link");
-      expect(linkElement.item(0).href.includes('styles.css')).toBeTrue();
+      expect(linkElement.item(0).href.includes('style.css')).toBeTrue();
    })
 
    it("CSS body sets margin and display", function() {
