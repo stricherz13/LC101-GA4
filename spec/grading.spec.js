@@ -37,7 +37,7 @@ describe ("Grading Tests: ", function () {
          let footerElements = container.body.getElementsByTagName("Footer").length;
          let mainElements = container.body.getElementsByTagName("Main").length;
          let articleElements = container.body.getElementsByTagName("Article").length;
-         let imageElements = container.body.getElementsByTagName("img").length;
+         let imageElements = container.body.getElementsByTagName("images").length;
 
          expect(pElements).toBeGreaterThanOrEqual(1);
          expect(headerElements).toBeGreaterThanOrEqual(1);
